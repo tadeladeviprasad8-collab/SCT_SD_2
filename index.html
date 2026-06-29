@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Number Guessing Game</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+<div class="logo">
+🎯 Number Guess
+</div>
+
+<div class="stats">
+<div id="coinDisplay">🪙 0</div>
+<div id="diamondDisplay">💎 0</div>
+<div id="levelDisplay">Level 1</div>
+</div>
+
+<div class="menu">
+<button id="shopIcon">🛒 Shop</button>
+<button id="pauseButton">⏸️</button>
+</div>
+
+</header>
+
+<main class="container">
+
+<h1>Guess The Number</h1>
+
+<div class="game-info">
+
+<p id="rangeDisplay">
+Range : 1 - 100
+</p>
+
+<p id="scoreDisplay">
+Score : 0
+</p>
+
+<p id="timerDisplay">
+Time : 00
+</p>
+
+</div>
+
+<div id="gameStatus">
+Click Start Game
+</div>
+
+<input
+type="number"
+id="guessInput"
+placeholder="Enter Number"
+autocomplete="off">
+
+<div class="buttons">
+
+<button id="guessButton">
+Submit Guess
+</button>
+
+<button id="hintButton">
+Free Hint
+</button>
+
+<button id="diamondHintButton">
+Diamond Hint 💎
+</button>
+
+<button id="startButton">
+Start Game
+</button>
+
+</div>
+
+<div id="hintDisplay"></div>
+
+<select id="themeSelect">
+</select>
+
+</main>
+
+<!-- Pause Menu -->
+
+<div id="pauseMenu">
+
+<h2>Paused</h2>
+
+<button id="resumeButton">
+▶ Resume
+</button>
+
+<button id="restartButton">
+🔄 Restart
+</button>
+
+<button id="muteButton">
+🔇 Mute
+</button>
+
+</div>
+
+<!-- Shop -->
+
+<div id="shopModal">
+
+<h2>🎨 Theme Shop</h2>
+
+<div id="shopContent">
+</div>
+
+<button id="closeShop">
+Close
+</button>
+
+</div>
+
+<canvas id="confettiCanvas"></canvas>
+
+<!-- Audio -->
+
+<audio id="backgroundMusic" loop>
+<source src="https://cdn.pixabay.com/audio/2024/10/28/audio_5c1f2b6b1d.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="coinSound">
+<source src="https://cdn.pixabay.com/audio/2022/03/10/audio_5f1b8b3b9c.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="hintSound">
+<source src="https://cdn.pixabay.com/audio/2022/03/10/audio_8a7b6c4e2f.mp3" type="audio/mpeg">
+</audio>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script src="script.js"></script>
+
+<footer>
+Made with  by <strong>DEVI PRASAD</strong>
+</footer>
+
+</body>
+</html>
